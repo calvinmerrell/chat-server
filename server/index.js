@@ -4,6 +4,7 @@ const messctrl = require("./controllers/messages_controller");
 const app = express()
 
 app.use(express.json());
+// app.use(express.static(__index + '/../public/build'));
 
 const messagesBaseUrl = "/api/messages";
 app.post(messagesBaseUrl, messctrl.create);
